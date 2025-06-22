@@ -2,10 +2,13 @@
 ### by Adhelia Wida Alfaretha
 
 ### Project summary
-This project connects structured climate datasets in PostgreSQL to Power BI for insightful, interactive visualizations.
+This portfolio project connects structured climate datasets in a PostgreSQL cloud database (NeonDB) to Power BI, enabling in-depth climate trend analysis through interactive dashboards. Python is used for data ingestion, PostgreSQL for transformation, and Power BI for final visualization.
 
 #### 🚀 Data Pipeline Overview:
-- **Data Source**: Global temperature anomalies, CO₂ emissions, GHG by sector, sea level rise (1750–2023)
+- **Data Source**: - [Our World in Data – CO₂ Emissions](https://ourworldindata.org/co2-emissions)
+- [Our World in Data – Greenhouse Gases](https://ourworldindata.org/greenhouse-gas-emissions)
+- [Our World in Data – Temperature Anomalies](https://ourworldindata.org/global-temperature-change)
+- [Our World in Data – Sea Level](https://ourworldindata.org/sea-level-rise)
 - **Database**: PostgreSQL (hosted on NeonDB)
 - **Cleaning**: SQL DELETEs to remove non-country aggregates
 - **Modeling**: Unified datasets for year- and country-based analysis
@@ -15,11 +18,15 @@ This project connects structured climate datasets in PostgreSQL to Power BI for 
     - Avg temperature anomaly pages
 
 #### ⚙️ Tools:
-- PostgreSQL | NeonDB| Power BI
+-Python (pandas, SQLAlchemy) — for data ingestion
+-PostgreSQL (NeonDB) — for database storage and transformation
+-SQL — for cleaning and preprocessing
+-Power BI — for final data modeling and visualization
 
 ### Skills Demonstrated
 - SQL data cleaning and transformation in PostgreSQL
 - Cloud database management (NeonDB)
+- ETL workflow building in Python
 - Connecting databases to BI tools (Power BI)
 - Data modeling and relationship building
 - Dashboard design for climate-related KPIs
@@ -32,6 +39,8 @@ CO₂ emissions have drastically increased since 1950, with the highest contribu
 
 #### 📁 Repo includes:
 - `schema.sql` – database schema
+- `portfolio_adlrt.ipynb`  – Colab notebook for pipeline (Python)
 - `Datacleaning_script.sql` – SQL cleaning code
 - `global_climate_analysis.pbix` – Power BI dashboard file
+- `screenshot_globalclimateemissionsproject` – screenshot from the process 
 - `README.md` – full documentation
